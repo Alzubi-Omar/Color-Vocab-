@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  background: -webkit-linear-gradient(70deg, #fff810 30%, rgba(0, 0, 0, 0) 30%),
+    -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+
+  /* fallback height */
+  min-height: 100vh;
+
+  /* small viewport height for modern browsers */
+  min-height: 100svh;
+}
+
+#grid-container > header {
+  padding: 0.5em;
+  background: #f5d55f;
+}
+
+#colors {
+  font-size: 25px;
+  color: #538b01;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#title-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  background: linear-gradient(
+    to right,
+    #eeff41,
+    #f9a825,
+    #ff5722,
+    #26c6da,
+    #ef5350,
+    #f48fb1,
+    #7e57c2,
+    #2196f3,
+    #43a047
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 3rem;
+}
+
+#grid-container > article {
+  padding: 2rem;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.left {
+  text-align: center;
+  width: 40%;
+  float: left;
+}
+
+.right {
+  text-align: center;
+  width: 40%;
+  float: right;
+}
+
+h2[id="red"] {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+#orange {
+  color: orange;
+}
+
+#green {
+  color: green;
+}
+
+#yellow {
+  color: yellow;
+}
+
+#grid-container > footer {
+  padding: 1rem;
+  background: #72c2f1;
+}
+
+.left-footer {
+  font-family: "Caveat", cursive;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-footer {
+  flex-direction: column;
+  float: right;
+}
